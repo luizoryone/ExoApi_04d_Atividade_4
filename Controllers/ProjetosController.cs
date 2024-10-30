@@ -20,7 +20,7 @@ namespace ExoApi.Controllers
         public IActionResult GetProjetos()
         {
             var projetos = _repo.Listar(); // Chama o método Listar() do repositório
-            return StatusCode(200, projetos); // Retorna os projetos com status 200
+            return StatusCode(200, projetos); // Retorna os projetos com status 200 / lista de projetos
         }
     }
 }

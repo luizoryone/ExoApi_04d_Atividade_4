@@ -1,5 +1,5 @@
 ﻿using ExoApi.Domains;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore; // inserido do DbContext
 
 namespace ExoApi.Contexts
 {
@@ -15,6 +15,7 @@ namespace ExoApi.Contexts
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Data Source=DESK_I5\\SQLEXPRESS; initial catalog=ExoApi; integrated Security=True; TrustServerCertificate=True");
+                //Data Source: serve name no ssms - unitial catalog = nome databank no ssms - 
             }
         }
 
